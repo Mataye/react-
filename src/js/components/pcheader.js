@@ -11,7 +11,7 @@ import {
     Modal,
     Tabs,
 } from 'antd';
-
+import {Router, Route, Link, browserHistory} from 'react-router';
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;

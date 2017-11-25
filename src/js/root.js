@@ -15,9 +15,6 @@ export default class ComponentRoot extends React.Component{
                     <MediaQuery query="(max-device-width: 1224px)">
                         <WiseIndex/>
                     </MediaQuery>
-
-
-
                 </div>
             );
         }
