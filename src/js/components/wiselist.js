@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row,Col} from 'antd';
+
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 export default class WiseList extends React.Component {
     constructor() {
