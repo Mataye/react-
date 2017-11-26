@@ -32,7 +32,26 @@ footer {
     color: #2db7f5;
 }
 
+#mobileheader .slick-list img{
+    height: 220px;
+    width:100%;
+}
 
+#mobileDetailsContainer .title,.article-title .title {
+    font-size: 0.44rem !important;
+    line-height: 1.4em
+}
+
+#mobileDetailsContainer .article-src-time {
+    font-size: 0.3rem !important;
+}
+
+#mobileDetailsContainer .article-content .txt {
+    font-size: 0.36rem;
+}
+#mobileDetailsContainer .ant-row{
+    margin-top: 20px;
+}
 
 .ucmobileList{
     margin-top: 60px;

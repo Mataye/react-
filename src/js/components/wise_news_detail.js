@@ -1,9 +1,8 @@
 import React from  'react';
 import {Row,Col,BackTop} from "antd";
-import PCHeader from "./pcheader";
-import PCFooter from "./pcfooter";
-import PCNewsImageBlock from './pc_news_img_block';
-export default class PCNewsDetail extends React.Component {
+import WiseHeader from "./wiseheader";
+import WiseFooter from "./wisefooter";
+export default class WiseNewsDetail extends React.Component {
     constructor(){
         super();
         this.state= {
@@ -27,21 +26,16 @@ export default class PCNewsDetail extends React.Component {
 
     render(){
         return(
-          <div>
-              <PCHeader/>
-              <Row>
-                  <Col span={2}>
-                  </Col>
-                  <Col span={14} className={"container"}>
-                      <div className={"article"} dangerouslySetInnerHTML={this.createMark()}></div>
-                  </Col>
-                  <Col span={6}>
-                      <PCNewsImageBlock count={40} type="top" width="100%" cardTitle="相关新闻" imageWidth="150px"/>
-                  </Col>
-                  <Col span={2}>
-                  </Col>
-              </Row>
-             <PCFooter/>
+            <div id="mobileDetailsContainer">
+              <WiseHeader/>
+                <div className="ucmobileList">
+                      <Row>
+                          <Col span={24} className={"container"}>
+                              <div className={"article"} dangerouslySetInnerHTML={this.createMark()}></div>
+                          </Col>
+                      </Row>
+                </div>
+             <WiseFooter/>
               <BackTop/>
           </div>
         );

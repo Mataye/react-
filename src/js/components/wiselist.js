@@ -23,7 +23,7 @@ export default class WiseList extends React.Component {
         const newsList = news.length >0
             ?news.map((newsItem,index) => (
                 <section key={index} className="m_article list-item special_section clearfix">
-                    <BrowserRouter>
+
                     <Link to={`details/${newsItem.uniquekey}`}>
                         <div className="m_article_img">
                             <img src={newsItem.thumbnail_pic_s} alt={newsItem.title} />
@@ -40,7 +40,7 @@ export default class WiseList extends React.Component {
                             </div>
                         </div>
                     </Link>
-                    </BrowserRouter>
+
                 </section>))
             : '没有加载到任何新闻';
         return (
