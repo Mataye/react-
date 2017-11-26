@@ -3,6 +3,7 @@ import {Row,Col,BackTop} from "antd";
 import PCHeader from "./pcheader";
 import PCFooter from "./pcfooter";
 import PCNewsImageBlock from './pc_news_img_block';
+import Comments from "./common_comment";
 export default class PCNewsDetail extends React.Component {
     constructor(){
         super();
@@ -34,6 +35,7 @@ export default class PCNewsDetail extends React.Component {
                   </Col>
                   <Col span={14} className={"container"}>
                       <div className={"article"} dangerouslySetInnerHTML={this.createMark()}></div>
+                      <Comments uniquekey={this.props.match.params.uniquekey}/>
                   </Col>
                   <Col span={6}>
                       <PCNewsImageBlock count={40} type="top" width="100%" cardTitle="相关新闻" imageWidth="150px"/>

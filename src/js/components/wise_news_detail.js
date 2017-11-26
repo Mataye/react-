@@ -2,6 +2,7 @@ import React from  'react';
 import {Row,Col,BackTop} from "antd";
 import WiseHeader from "./wiseheader";
 import WiseFooter from "./wisefooter";
+import Comment from "./common_comment";
 export default class WiseNewsDetail extends React.Component {
     constructor(){
         super();
@@ -32,6 +33,7 @@ export default class WiseNewsDetail extends React.Component {
                       <Row>
                           <Col span={24} className={"container"}>
                               <div className={"article"} dangerouslySetInnerHTML={this.createMark()}></div>
+                              <Comment/>
                           </Col>
                       </Row>
                 </div>
