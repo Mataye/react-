@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from 'antd';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Router, Link } from 'react-router-dom';
 export default class PCNewsImageBlock extends React.Component {
     constructor() {
         super();
@@ -33,7 +33,7 @@ export default class PCNewsImageBlock extends React.Component {
         const newsList = news.length
             ? news.map((newsItem, index) => (
                 <div key={index} className="imageblock">
-                    <BrowserRouter>
+                    {/*<BrowserRouter>*/}
                     <Link to={`details/${newsItem.uniquekey}`} target="_blank">
                         <div className="custom-image">
                             <img alt="" style={styleImage} src={newsItem.thumbnail_pic_s}/>
@@ -43,7 +43,7 @@ export default class PCNewsImageBlock extends React.Component {
                             <p>{newsItem.author_name}</p>
                         </div>
                     </Link>
-                    </BrowserRouter>
+                    {/*</BrowserRouter>*/}
                 </div>
             ))
             : '没有加载到任何新闻';
